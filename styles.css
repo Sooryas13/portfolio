@@ -166,7 +166,7 @@ header.scrolled .nav-inner{box-shadow:0 8px 30px rgba(0,0,0,0.35);}
   transition:transform .6s var(--ease), opacity .5s ease;
   background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
 }
-@media (max-width:960px){.hero-roles .role{left:50%; transform:translate(-50%,100%);} .hero-roles .role.active{transform:translate(-50%,0);}}
+@media (max-width:960px){.hero-roles .role{left:0%; transform:translate(-50%,100%);} .hero-roles .role.active{transform:translate(-50%,0);}}
 .hero-roles .role.active{opacity:1; transform:translateY(0);}
 .hero-roles .role.exit{opacity:0; transform:translateY(-100%);}
 
