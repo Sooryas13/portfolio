@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soorya S — Web &amp; WordPress Developer</title>
+<meta name="description" content="Soorya S — Frontend Developer, WordPress Developer &amp; UI/UX craftsman building fast, accessible, scalable web experiences.">
+<meta property="og:title" content="Soorya S — Web &amp; WordPress Developer">
+<meta property="og:description" content="I build high-performance websites that combine beautiful UI, seamless UX, and scalable development.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+<div id="loader"><div class="loader-mark">SOORYA&nbsp;S</div><div class="loader-bar"><span id="loaderFill"></span></div></div>
+<div class="noise"></div>
+<div id="progress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<header id="siteHeader">
+  <div class="nav-inner wrap" style="padding-left:22px;padding-right:22px;">
+    <a href="#home" class="logo">SOORYA<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-hi reveal in">Hello, I'm</p>
+      <h1 class="hero-name reveal in">SOORYA&nbsp;S</h1>
+      <div class="hero-roles" id="heroRoles">
+        <span class="role active">Web Developer</span>
+        <span class="role">WordPress Developer</span>
+        <span class="role">Frontend Developer</span>
+        <span class="role">UI/UX Developer</span>
+      </div>
+      <p class="hero-desc reveal in">I build high-performance websites that combine beautiful UI, seamless UX, and scalable development.</p>
+      <div class="hero-actions reveal in">
+        <a href="#projects" class="btn btn-primary magnetic">View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="Soorya_S_Resume.pdf" class="btn btn-secondary magnetic" id="resumeBtn">Download Resume
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+        </a>
+      </div>
+      <div class="hero-socials reveal in">
+        <a href="https://www.linkedin.com/in/soorya-s13/" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V8h4v2a6 6 0 014-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/Sooryas13/" class="social-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+        <a href="mailto:sooryasclt@gmail.com" class="social-btn" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-scale in">
+      <div><img src="images/sooryas.png" alt="Soorya S"></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal-scale">
+      <div class="about-photo-wrap">
+        <!-- <div class="about-photo">
+            <span class="initials">SS</span>
+        </div> -->
+        <div class="laptop">
+        <div class="laptop-glow"></div>
+        <div class="dots"><span></span><span></span><span></span></div>
+        <code>
+          <span class="l1">const</span> <span class="l2">developer</span> = {<br>
+          &nbsp;&nbsp;name: <span class="l4">'Soorya S'</span>,<br>
+          &nbsp;&nbsp;stack: [<span class="l4">'Angular'</span>, <span class="l4">'WordPress'</span>],<br>
+          &nbsp;&nbsp;focus: <span class="l4">'performance'</span>,<br>
+          &nbsp;&nbsp;<span class="l3">build</span>: () => <span class="l3">ship</span>(),<br>
+          };
+        </code>
+      </div>
+        <div class="about-badge"><b>2+</b><span>Years Experience</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal">Crafting digital experiences with precision &amp; care</h2>
+      <p class="about-desc reveal">Results-driven developer experienced in building WordPress websites, custom themes, responsive front-end interfaces, and SEO-optimized digital experiences. Passionate about creating websites that are visually appealing, fast, accessible, and user-focused.</p>
+      <div class="stat-grid">
+        <div class="stat-card reveal"><div class="num">2+</div><div class="label">Years Experience</div></div>
+        <div class="stat-card reveal"><div class="num">15+</div><div class="label">Websites Delivered</div></div>
+        <div class="stat-card reveal"><div class="num">SEO</div><div class="label">Focused Builds</div></div>
+        <div class="stat-card reveal"><div class="num">NG</div><div class="label">Angular Learner</div></div>
+        <div class="stat-card reveal"><div class="num">WP</div><div class="label">WordPress Expert</div></div>
+        <div class="stat-card reveal"><div class="num">100%</div><div class="label">Responsive Builds</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">Career Path</p>
+    <h2 class="section-title reveal" style="text-align:center;">Experience Timeline</h2>
+    <p class="section-sub reveal" style="text-align:center;margin-left:auto;margin-right:auto;">A short but dense history — real client work, real constraints, real ships.</p>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-role">Frontend Developer</div>
+          <div class="tl-company">ioNob Innovations LLP</div>
+          <div class="tl-period">Feb 2024 — Apr 2026</div>
+          <p class="tl-desc">Built and maintained Angular frontends and WordPress/Elementor sites across 15+ client projects, focusing on reactive forms, REST API integration, and performance-optimized WordPress builds.</p>
+          <div class="tl-tags"><span>Angular</span><span>WordPress</span><span>REST API</span><span>Elementor</span></div>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-role">Web Developer Intern</div>
+          <div class="tl-company">Cloudspring Technologies</div>
+          <div class="tl-period">Oct 2023 — Feb 2024</div>
+          <p class="tl-desc">Started my professional journey building responsive websites and custom WordPress themes, learning the fundamentals of clean, maintainable front-end code.</p>
+          <div class="tl-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>WordPress</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">Academic Background</p>
+    <h2 class="section-title reveal" style="text-align:center;">Education</h2>
+    <p class="section-sub reveal" style="text-align:center;margin-left:auto;margin-right:auto;">Strong foundation in computer science and web technologies.</p>
+    <div class="education-card reveal">
+      <div class="edu-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6m0 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4m20 0H2m0 0l1.46-4.38C3.74 9.42 5.18 9 6.67 9h10.66c1.49 0 2.93.42 3.21 2.62L22 10z"/><path d="M12 14v4m-4-4v4m8-4v4"/></svg></div>
+      <div class="edu-content">
+        <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+        <div class="edu-school">College of Applied Sciences</div>
+        <div class="edu-university">Calicut University</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow reveal">What I Work With</p>
+    <h2 class="section-title reveal">Skills &amp; Tools</h2>
+    <p class="section-sub reveal">A practical toolkit built for shipping — not just for show.</p>
+    <div class="skills-tabs">
+      <button class="skill-tab active" data-tab="frontend">Frontend</button>
+      <button class="skill-tab" data-tab="cms">CMS</button>
+      <button class="skill-tab" data-tab="backend">Backend</button>
+      <button class="skill-tab" data-tab="uiux">UI/UX</button>
+      <button class="skill-tab" data-tab="seo">SEO</button>
+      <button class="skill-tab" data-tab="tools">Tools</button>
+    </div>
+
+    <div class="skill-panel active" data-panel="frontend"></div>
+    <div class="skill-panel" data-panel="cms"></div>
+    <div class="skill-panel" data-panel="backend"></div>
+    <div class="skill-panel" data-panel="uiux"></div>
+    <div class="skill-panel" data-panel="seo"></div>
+    <div class="skill-panel" data-panel="tools"></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal">Selected Work</p>
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <p class="section-sub reveal">A mix of WordPress builds, Angular platforms, and enterprise dashboards.</p>
+    <div class="proj-grid" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow reveal">How I Can Help</p>
+    <h2 class="section-title reveal">Services</h2>
+    <p class="section-sub reveal">Focused offerings, not a laundry list — the things I'm genuinely good at.</p>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">How It Works</p>
+    <h2 class="section-title reveal" style="text-align:center;">Development Process</h2>
+    <p class="section-sub reveal" style="text-align:center;margin-left:auto;margin-right:auto;">A repeatable, six-step path from idea to a maintained, live product.</p>
+    <div class="process-row" id="processRow"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">Kind Words</p>
+    <h2 class="section-title reveal" style="text-align:center;">Testimonials</h2>
+    <div class="testi-wrap reveal">
+      <div class="testi-track">
+        <div class="testi-slides" id="testiSlides"></div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">By The Numbers</p>
+    <h2 class="section-title reveal" style="text-align:center;">Proven Track Record</h2>
+    <p class="section-sub reveal" style="text-align:center;margin-left:auto;margin-right:auto;">Real results that speak for themselves.</p>
+    <div class="achieve-grid" id="achieveGrid"></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE ME -->
+<section id="why">
+  <div class="wrap">
+    <p class="eyebrow reveal">The Difference</p>
+    <h2 class="section-title reveal">Why Work With Me</h2>
+    <p class="section-sub reveal">Seven things I hold myself to on every project, big or small.</p>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="techstack">
+  <div class="wrap">
+    <p class="eyebrow reveal">Toolbox</p>
+    <h2 class="section-title reveal">Tech Stack</h2>
+  </div>
+  <div class="tech-marquee">
+    <div class="tech-track" id="techTrack"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center;display:flex;">Get In Touch</p>
+    <h2 class="section-title reveal" style="text-align:center;">Let's Build Something Great</h2>
+    <p class="section-sub reveal" style="text-align:center;margin-left:auto;margin-right:auto;">Have a project in mind? Tell me about it — I usually reply within a day.</p>
+    <div class="contact-card reveal">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Based in Calicut, Kerala — available for remote and on-site work across India.</p>
+        <div class="contact-row"><div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div><div><b>Email</b><span>sooryasclt@gmail.com</span></div></div>
+                <div class="contact-row"><div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div><div><b>Phone</b><span><a href="tel:+917994349234">+91 7994349234</a></span></div></div>
+        <div class="contact-row"><div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V8h4v2a6 6 0 014-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><b>LinkedIn</b><span>https://www.linkedin.com/in/soorya-s13/</span></div></div>
+        <div class="contact-row"><div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></div><div><b>GitHub</b><span>https://github.com/Sooryas13/</span></div></div>
+        <div class="contact-row"><div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b>Location</b><span>Calicut, Kerala, India</span></div></div>
+
+      </div>
+      <div class="cta-section">
+        <h3>Ready to Start Your Project?</h3>
+        <p>Let me know what you're building. I'm always excited to explore new opportunities and collaborate on impactful work.</p>
+        <div class="cta-buttons">
+          <a href="mailto:sooryasclt@gmail.com" class="btn btn-primary magnetic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            Send Email
+          </a>
+          <a href="https://www.linkedin.com/in/soorya-s13/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V8h4v2a6 6 0 014-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+        <div class="availability-badge">
+          <!-- <span class="dot"></span> -->
+          <p>Typically respond within 24 hours. Available for projects starting immediately.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 Soorya S. All rights reserved.</p>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/soorya-s13/" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4V8h4v2a6 6 0 014-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+      <a href="https://github.com/Sooryas13/" class="social-btn" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+    </div>
+    <a href="#home" class="back-top" aria-label="Back to top"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+  </div>
+</footer>
+
+<!-- COMMAND PALETTE -->
+<div id="palette-overlay">
+  <div class="palette">
+    <input type="text" id="paletteInput" placeholder="Jump to a section... (type to search)">
+    <div class="palette-list" id="paletteList"></div>
+    <div class="palette-hint">↑↓ navigate · ↵ select · esc close</div>
+  </div>
+</div>
+<div class="kbd-hint"><kbd>⌘</kbd><kbd>K</kbd> Quick jump</div>
+<script src="script.js"></script>
+</body>
+</html>
