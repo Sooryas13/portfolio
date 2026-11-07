@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===== DATA: SKILLS ===== */
   const skillData = {
     frontend: [['HTML5',95],['CSS3',95],['SCSS',85],['JavaScript',88],['TypeScript',75],['Angular',82],['Bootstrap',90],['Tailwind CSS',85]],
-    cms: [['WordPress',95],['WooCommerce',85],['Shopify',70],['Elementor',92],['ACF',85],['Strapi',65]],
+    cms: [['WordPress',95],['WooCommerce',85],['Shopify',70],['Elementor',92],['Divi',85],['Gutenberg',82],['WPBakery',78],['ACF',85],['Strapi',65]],
     backend: [['PHP',75],['REST API',85],['WooCommerce API',75]],
     uiux: [['Figma',80],['Responsive Design',95],['Design Systems',78]],
     seo: [['Core Web Vitals',85],['Technical SEO',82],['On-page SEO',85],['Google Analytics',78],['Search Console',80],['Schema Markup',72]],
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const iconFor = n => {
     const m = {'HTML5':'code-2','CSS3':'palette','SCSS':'palette','JavaScript':'braces','TypeScript':'braces',
       'Angular':'component','Bootstrap':'layout-grid','Tailwind CSS':'wind','WordPress':'globe','WooCommerce':'shopping-cart',
-      'Shopify':'shopping-bag','Elementor':'layers','ACF':'settings-2','Strapi':'database','PHP':'server','REST API':'plug',
+      'Shopify':'shopping-bag','Elementor':'layers','Divi':'layers','Gutenberg':'blocks','WPBakery':'layout-template','ACF':'settings-2','Strapi':'database','PHP':'server','REST API':'plug',
       'WooCommerce API':'plug-zap','Figma':'figma','Responsive Design':'smartphone','Design Systems':'grid-3x3',
       'Core Web Vitals':'gauge','Technical SEO':'search-code','On-page SEO':'file-search','Google Analytics':'bar-chart-3',
       'Search Console':'monitor-check','Schema Markup':'file-json','Git':'git-branch','GitHub':'github','VS Code':'terminal-square',
@@ -138,12 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
     {title:'WorldsStar Manpower Solutions', icon:'briefcase', desc:'Custom WordPress build for a manpower solutions company, with ACF-powered content and a strong focus on Core Web Vitals.', stack:['WordPress','ACF','Performance'], achieve:'Optimized for Core Web Vitals with a leaner asset pipeline.', url:'https://www.worldstarmanpower.ae/'},
     {title:'Prabodhanam', icon:'newspaper', desc:'A Malayalam-language digital magazine platform with membership tiers and a custom REST API layer for content delivery.', stack:['WordPress','REST API','Membership'], achieve:'Serves 10K+ monthly readers with Malayalam content support.', url:'https://prabodhanam.com/'},
     {title:'STIMES ERP', icon:'building-2', desc:'Corporate marketing website built in Elementor, engineered around technical and on-page SEO from the ground up.', stack:['Elementor','WordPress','SEO'], achieve:'Structured for search visibility from day one.', url:'https://stimeserp.com/'},
+    {title:'Inspire Institute of Sport', icon:'dumbbell', desc:'Website built with Divi for Inspire Institute of Sport.', stack:['WordPress','Divi'], achieve:'Live website built with the Divi builder.', url:'https://inspireinstituteofsport.com/'},
+    {title:'The/Nudge Institute', icon:'heart-handshake', desc:'Website built with Elementor for The/Nudge Institute.', stack:['WordPress','Elementor'], achieve:'Live website built with the Elementor builder.', url:'https://www.thenudge.org/'},
+    {title:'Bangalore Film Company', icon:'film', desc:'Website project for Bangalore Film Company.', stack:['Website'], achieve:'Visit the live website.', url:'https://bangalorefilmcompany.com/'},
     {title:'Advertisement Management Platform', icon:'megaphone', desc:'An advertisement management platform built in Angular with reactive forms and a live REST API-driven dashboard.', stack:['Angular','REST API','Reactive Forms'], achieve:'Reactive forms drive a real-time management dashboard.', url:''},
     {title:'SaaS Application', icon:'layers', desc:'A comprehensive SaaS application built with Angular, focusing on intuitive UI design and seamless responsiveness across all devices and screen sizes.', stack:['Angular','UI/UX','Responsive Design'], achieve:'Delivered pixel-perfect interfaces with excellent responsiveness on mobile, tablet, and desktop.', url:''},
     {title:'DMS / CMS Platform', icon:'folder-kanban', desc:'An enterprise document management system in Angular, focused on file handling at scale and a fully responsive UI.', stack:['Angular','Enterprise','File Management'], achieve:'Built to handle enterprise-scale file volumes cleanly.', url:''},
   ];
   document.getElementById('projGrid').innerHTML = projects.map((p,i) => `
-    <div class="proj-card reveal ${i >= 3 ? 'angular-proj' : ''}">
+    <div class="proj-card reveal ${p.stack.includes('Angular') ? 'angular-proj' : ''}">
       <div class="proj-shot"><i data-lucide="${p.icon}" width="56" height="56" class="mono-icon"></i></div>
       <div class="proj-body">
         <h3 class="proj-title">${p.title}</h3>
@@ -188,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(()=> goTesti((tIdx+1)%testimonials.length), 5000);
 
   /* ===== DATA: ACHIEVEMENTS ===== */
-  const achievements = [['2+','Years Experience'],['15+','Projects'],['99%','Client Satisfaction'],['40%','Performance Improvement'],['25%','SEO Growth']];
+  const achievements = [['2.5+','Years Experience'],['20+','Projects'],['99%','Client Satisfaction'],['40%','Performance Improvement'],['25%','SEO Growth']];
   document.getElementById('achieveGrid').innerHTML = achievements.map(([n,l])=>`
     <div class="achieve-card reveal"><div class="achieve-num" data-target="${n}">0</div><div class="achieve-label">${l}</div></div>`).join('');
   const counterIO = new IntersectionObserver(entries => {
